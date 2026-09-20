@@ -1,0 +1,14 @@
+{
+  "name": "saffron-and-stone",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A polished one-page website for an Afghan restaurant.",
+  "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "node --test"
+  },
+  "devDependencies": {
+    "prettier": "^3.9.8"
+  }
+}

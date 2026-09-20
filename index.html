@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Saffron & Stone serves soulful Afghan food, from hand-folded mantu to slow-cooked kabuli palaw."
+    />
+    <meta name="theme-color" content="#16372f" />
+    <title>Saffron & Stone | Afghan Kitchen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Gilda+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script defer src="assets/script.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#home" aria-label="Saffron and Stone home">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span>Saffron <i>&</i> Stone</span>
+      </a>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open navigation"
+        aria-expanded="false"
+        aria-controls="site-nav"
+        data-menu-toggle
+      >
+        <span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation" data-nav>
+        <a href="#story">Our story</a>
+        <a href="#menu">Menu</a>
+        <a href="#gatherings">Gatherings</a>
+        <a href="#visit">Visit</a>
+        <a class="nav-cta" href="#reserve">Book a table</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section id="home" class="hero">
+        <div
+          class="hero-image"
+          role="img"
+          aria-label="A generous Afghan dining table"
+        ></div>
+        <div class="hero-wash"></div>
+        <div class="hero-copy">
+          <p class="eyebrow light">Afghan cooking, rooted in hospitality</p>
+          <h1>Come hungry.<br /><em>Leave family.</em></h1>
+          <p class="hero-intro">
+            Recipes carried across generations, served with warmth at the centre
+            of the table.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-gold" href="#menu">Explore our menu</a>
+            <a class="text-link light-link" href="#reserve"
+              >Reserve a table <span>↗</span></a
+            >
+          </div>
+        </div>
+        <div class="hero-note">
+          <span>Scroll to discover</span>
+          <span class="scroll-line"></span>
+        </div>
+      </section>
+
+      <section id="story" class="story section">
+        <div class="section-number" aria-hidden="true">01</div>
+        <div class="story-heading">
+          <p class="eyebrow">Our table</p>
+          <h2>From Kabul,<br />with <em>love.</em></h2>
+        </div>
+        <div class="story-copy">
+          <p class="lead">
+            Afghan food is a language of generosity: fragrant rice piled high,
+            bread torn and shared, and one more plate arriving just when you
+            thought the feast was complete.
+          </p>
+          <p>
+            At Saffron & Stone, we cook the dishes we grew up with—slowly,
+            honestly, and with a little modern spirit. Every dumpling is folded
+            by hand. Every spice blend starts in our kitchen. Every guest is
+            welcomed like an old friend.
+          </p>
+          <a class="text-link dark-link" href="#gatherings"
+            >Meet our kitchen <span>↗</span></a
+          >
+        </div>
+        <figure class="story-image">
+          <img
+            src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1200&q=85"
+            alt="Golden dumplings served with herbs and sauce"
+          />
+          <figcaption>Made by hand, every morning</figcaption>
+        </figure>
+      </section>
+
+      <section id="menu" class="menu-section section">
+        <div class="menu-heading">
+          <div>
+            <p class="eyebrow">A taste of home</p>
+            <h2>Our <em>favourites</em></h2>
+          </div>
+          <p>
+            Familiar Afghan classics and seasonal plates, built for passing,
+            sharing, and lingering a little longer.
+          </p>
+        </div>
+
+        <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+          <button class="menu-tab active" type="button" data-filter="all">
+            All dishes
+          </button>
+          <button class="menu-tab" type="button" data-filter="rice">
+            Rice & mains
+          </button>
+          <button class="menu-tab" type="button" data-filter="small">
+            Small plates
+          </button>
+          <button class="menu-tab" type="button" data-filter="sweet">
+            Sweet
+          </button>
+        </div>
+
+        <div class="dish-grid" data-dish-grid>
+          <article class="dish-card featured" data-category="rice">
+            <div class="dish-image">
+              <img
+                src="https://images.unsplash.com/photo-1596560548464-f010549b84d7?auto=format&fit=crop&w=1000&q=85"
+                alt="Aromatic rice with vegetables and herbs"
+              />
+              <span class="dish-tag">House signature</span>
+            </div>
+            <div class="dish-info">
+              <div>
+                <span>01</span>
+                <h3>Kabuli Palaw</h3>
+              </div>
+              <p>
+                Basmati, braised lamb, caramelised carrot, raisin & toasted
+                almond
+              </p>
+              <strong>$24</strong>
+            </div>
+          </article>
+
+          <article class="dish-card" data-category="small">
+            <div class="dish-image">
+              <img
+                src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=1000&q=85"
+                alt="Steamed dumplings with a fresh garnish"
+              />
+            </div>
+            <div class="dish-info">
+              <div>
+                <span>02</span>
+                <h3>Mantu</h3>
+              </div>
+              <p>Hand-folded beef dumplings, garlic yoghurt, split pea qorma</p>
+              <strong>$18</strong>
+            </div>
+          </article>
+
+          <article class="dish-card" data-category="small">
+            <div class="dish-image">
+              <img
+                src="https://images.unsplash.com/photo-1577906096429-f73c2c312435?auto=format&fit=crop&w=1000&q=85"
+                alt="Crisp flatbread with herbs"
+              />
+            </div>
+            <div class="dish-info">
+              <div>
+                <span>03</span>
+                <h3>Bolani</h3>
+              </div>
+              <p>Crisp flatbread, potato, leek, coriander chutney</p>
+              <strong>$13</strong>
+            </div>
+          </article>
+
+          <article class="dish-card" data-category="rice">
+            <div class="dish-image">
+              <img
+                src="https://images.unsplash.com/photo-1529042410759-befb1204b468?auto=format&fit=crop&w=1000&q=85"
+                alt="Grilled kofta with herbs and vegetables"
+              />
+            </div>
+            <div class="dish-info">
+              <div>
+                <span>04</span>
+                <h3>Kofta Challow</h3>
+              </div>
+              <p>Spiced beef kofta, tomato qorma, saffron rice</p>
+              <strong>$22</strong>
+            </div>
+          </article>
+
+          <article class="dish-card" data-category="sweet">
+            <div class="dish-image">
+              <img
+                src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=1000&q=85"
+                alt="Creamy dessert topped with pistachios"
+              />
+            </div>
+            <div class="dish-info">
+              <div>
+                <span>05</span>
+                <h3>Firni</h3>
+              </div>
+              <p>Cardamom custard, rose, pistachio, seasonal fruit</p>
+              <strong>$10</strong>
+            </div>
+          </article>
+        </div>
+        <a
+          class="button button-outline"
+          href="mailto:hello@saffronandstone.com?subject=Full%20menu%20request"
+          >Request the full menu</a
+        >
+      </section>
+
+      <section id="gatherings" class="gatherings">
+        <div
+          class="gathering-image"
+          role="img"
+          aria-label="Friends enjoying a meal together"
+        ></div>
+        <div class="gathering-copy">
+          <p class="eyebrow light">Mehmani / gatherings</p>
+          <h2>There is always<br />room for <em>one more.</em></h2>
+          <p>
+            From intimate dinners to joyful weddings, our generous feasts are
+            made for your moments. Choose a sharing menu or let us build one
+            around your table.
+          </p>
+          <a class="button button-gold" href="mailto:events@saffronandstone.com"
+            >Plan your gathering</a
+          >
+        </div>
+      </section>
+
+      <section class="quote-section section">
+        <span class="quote-mark" aria-hidden="true">“</span>
+        <blockquote>
+          <p>
+            Food that felt like a celebration—deeply comforting, beautifully
+            served, and full of stories.
+          </p>
+          <footer>— Layla M., neighbourhood guest</footer>
+        </blockquote>
+        <div class="quote-flower" aria-hidden="true">✣</div>
+      </section>
+
+      <section id="reserve" class="reserve section">
+        <div>
+          <p class="eyebrow">Save your seat</p>
+          <h2>Meet us at<br /><em>the table.</em></h2>
+        </div>
+        <form class="reserve-form" data-reservation-form>
+          <label>
+            <span>Your name</span>
+            <input name="name" type="text" autocomplete="name" required />
+          </label>
+          <label>
+            <span>Email address</span>
+            <input name="email" type="email" autocomplete="email" required />
+          </label>
+          <div class="form-row">
+            <label>
+              <span>Date</span>
+              <input name="date" type="date" required />
+            </label>
+            <label>
+              <span>Guests</span>
+              <select name="guests" required>
+                <option value="">Select</option>
+                <option>2 guests</option>
+                <option>3 guests</option>
+                <option>4 guests</option>
+                <option>5 guests</option>
+                <option>6+ guests</option>
+              </select>
+            </label>
+          </div>
+          <button class="button button-dark" type="submit">
+            Request a table
+          </button>
+          <p class="form-note" data-form-note aria-live="polite">
+            We’ll confirm your request by email.
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <footer id="visit" class="footer">
+      <div class="footer-top">
+        <a class="brand footer-brand" href="#home">
+          <span class="brand-mark" aria-hidden="true">S</span>
+          <span>Saffron <i>&</i> Stone</span>
+        </a>
+        <p>Afghan food. Open hearts.<br />A table for everyone.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer"
+            >Instagram ↗</a
+          >
+          <a href="https://www.facebook.com/" target="_blank" rel="noreferrer"
+            >Facebook ↗</a
+          >
+        </div>
+      </div>
+      <div class="footer-grid">
+        <div>
+          <span class="footer-label">Find us</span>
+          <p>123 Saffron Lane<br />Toronto, ON M6G 1A1</p>
+          <a href="https://maps.google.com/" target="_blank" rel="noreferrer"
+            >Get directions ↗</a
+          >
+        </div>
+        <div>
+          <span class="footer-label">Hours</span>
+          <p>Tue–Thu 5–10pm<br />Fri–Sun 12–10pm<br />Monday closed</p>
+        </div>
+        <div>
+          <span class="footer-label">Say hello</span>
+          <p>
+            <a href="tel:+14165550192">(416) 555-0192</a><br />
+            <a href="mailto:hello@saffronandstone.com"
+              >hello@saffronandstone.com</a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year></span> Saffron & Stone</span>
+        <span>Made with warmth in Toronto</span>
+      </div>
+    </footer>
+  </body>
+</html>
