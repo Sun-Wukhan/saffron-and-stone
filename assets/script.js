@@ -20,8 +20,21 @@
     return date.getFullYear();
   }
 
+  /**
+   * Returns whether the viewport uses the desktop navigation layout.
+   * @param {number} viewportWidth - Current viewport width in CSS pixels.
+   * @returns {boolean} Whether desktop navigation should be active.
+   */
+  function isDesktopViewport(viewportWidth) {
+    return viewportWidth > 900;
+  }
+
   if (typeof module !== "undefined" && module.exports) {
-    module.exports = { getDisplayYear, shouldShowDish };
+    module.exports = {
+      getDisplayYear,
+      isDesktopViewport,
+      shouldShowDish,
+    };
   }
 
   if (typeof document === "undefined") {
@@ -63,6 +76,19 @@
     link.addEventListener("click", closeNavigation);
   });
 
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      closeNavigation();
+      menuToggle?.focus();
+    }
+  });
+
+  window.addEventListener("resize", () => {
+    if (isDesktopViewport(window.innerWidth)) {
+      closeNavigation();
+    }
+  });
+
   window.addEventListener(
     "scroll",
     () => {
@@ -75,7 +101,11 @@
     tab.addEventListener("click", () => {
       const selectedCategory = tab.dataset.filter ?? "all";
 
-      menuTabs.forEach((item) => item.classList.toggle("active", item === tab));
+      menuTabs.forEach((item) => {
+        const isActive = item === tab;
+        item.classList.toggle("active", isActive);
+        item.setAttribute("aria-selected", String(isActive));
+      });
       dishes.forEach((dish) => {
         const dishCategory = dish.dataset.category ?? "";
         dish.classList.toggle(
